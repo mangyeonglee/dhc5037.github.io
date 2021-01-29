@@ -1,0 +1,226 @@
+/* Global style */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Shadows+Into+Light+Two&display=swap');
+
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjus: 100%;  /* iphone font size 변경 방지 */
+  }
+
+body a {
+    color:rgb(0, 132, 255);
+}
+
+
+
+#wrap:after {
+    content: "";
+    display: inline;
+    clear: both;
+}
+
+/* Aside style */
+
+aside {
+    display: block;
+    position: fixed;
+    background-color: hsl(214, 100%, 18%);
+    box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.3);
+    padding-top: 60px;
+    padding-left: 21px;
+    padding-right: 30px;
+    color:white;
+    width: 360px;
+    height: 100%;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+
+aside li { list-style: none; }
+
+aside a { text-decoration: none;}
+
+aside > hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid white;
+    opacity: 50%;
+}
+
+aside > h1 {
+    font-family: 'Kanit',sans-serif;
+    font-size: 45px;
+}
+
+aside > h2 { font-size: 18px; }
+
+.nav-items > li > a {
+    display: block;
+    color:white;
+    padding: 6px 0 6px 12px;
+}
+
+.nav-items > li > a.active {
+    background-color: white;
+    color: black;
+    font-weight:bold;
+  }
+
+.nav-items > li > a:hover:not(.active) {
+    background-color: rgba(87, 109, 150, 0.5);
+    color: white;
+}
+
+/* Section style */
+
+section {
+    float:left;
+    margin-left: 400px;
+    padding-top: 60px;
+    height: 100%;
+    width: 60%;
+}
+
+section h3{
+    font-family: 'Shadows Into Light Two', cursive;
+    background: linear-gradient(to top, #FFE400 35%, transparent 35%);
+    font-size: 21px;
+    width:fit-content;
+    vertical-align: bottom;
+}
+
+article {
+    margin-right: 60px;
+    margin-bottom: 60px; 
+}
+
+article > hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid lightgray;
+    opacity: 50%;
+}
+
+.main-contents li{
+    margin-left: 21px; 
+    margin-top: 6px;
+
+}
+
+.main-contents p {
+    line-height: 1.5em;
+}
+
+/* Table global style */
+
+
+
+/* Staff profile style */
+
+.profile-img {
+    display: block;
+    float: left;
+    width:120px;
+    height: 120px;
+}
+
+.profile-img img {
+    width:inherit;
+    margin: 0;
+   
+}
+
+.staffs-name {
+    width: 180px;
+    height: 120px;
+    vertical-align: middle;
+    padding:0;
+}
+
+.staffs-name p{
+    width: inherit;
+    text-align: left;
+}
+
+/* Table style */
+
+h4 {
+    margin: 30px 0 6px 0;
+}
+
+.table p {
+    font-size: 15px;
+}
+
+.table-content div { border: 0.1px solid #f1f1f1; }
+
+.lectures > .table {
+    display: table;
+    width: 85%;
+}
+
+.labs > .table {
+    display: table;
+    width: 85%;
+}
+
+.grades > .table {
+    display: table;
+    width: 50%;
+}
+
+.table-row {
+    display: table-row;
+    width: auto;
+    clear: both;
+    
+}
+
+.table-header {
+    font-weight: bold;
+    background-color: #f5f5f5;;
+}
+
+.even-row { background-color: #f5f5f5; }
+
+.table-col{
+    display:table-cell;
+    padding: 6px 9px 6px 9px;
+}
+
+.table-col li {
+    font-size:12px;
+    margin-left: 27px;
+    margin-top:3px;
+    color:rgb(94, 94, 94)
+}
+
+.col1{ width: 90px; }
+.grades .col1{ width: 150px;}
+
+.col2{ width: 90px; }
+
+/* books style */
+.books img {
+    margin: 21px 0 12px 0;
+    width: 200px;
+    box-shadow: 7px 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+.required-readings {
+    margin: 9px 0 0 9px;
+    font-size: 15px;  
+    width: 70%;
+}
+
